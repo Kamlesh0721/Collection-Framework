@@ -1,4 +1,4 @@
-package Iterator_1;
+package CollectionFramework.GenericMethod.Iterator_1;
 
 import java.util.ArrayList;
 import java.util.Collection;

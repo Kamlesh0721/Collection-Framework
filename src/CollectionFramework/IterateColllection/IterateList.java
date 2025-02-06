@@ -1,4 +1,4 @@
-package CollectionFramework.GenericMethod.IterateColllection;
+package CollectionFramework.IterateColllection;
 
 import java.util.*;
 
@@ -32,15 +32,15 @@ public class IterateList {
 //        while(it.hasNext()){
 //
 //            System.out.print(it.next()+ " ");
-//            list2.add(100);
+//            list2.add(100);// give error: ConcurrentModificationException
 //        }
 //        System.out.println();
         //list iterator
-        ListIterator lit=list2.listIterator();
-        while (lit.hasNext()){
-            System.out.print(lit.next()+" ");
-//            list2.add(1000); // give error
-        }
+//        ListIterator lit=list2.listIterator();
+//        while (lit.hasNext()){
+//            System.out.print(lit.next()+" ");
+////            list2.add(1000);
+//        }
 
         System.out.println(list2);
         // java 8+ feature  : foreach loop

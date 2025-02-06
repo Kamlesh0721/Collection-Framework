@@ -1,6 +1,6 @@
 package Multithreading;
 
-class A extends Thread {
+class A2 implements Runnable {
     public void run() {
         for (int i = 0; i < 25; i++) {
             System.out.println("Hi");
@@ -13,7 +13,7 @@ class A extends Thread {
     }
 }
 
-class B extends Thread {
+class B2 implements Runnable {
     public void run() {
         for (int i = 0; i < 25; i++) {
             System.out.println("Hello");
@@ -26,16 +26,17 @@ class B extends Thread {
     }
 }
 
-public class Demo {
+public class Demo2 {
     public static void main(String[] args) {
-        A obj1 = new A();
-        B obj2 = new B();
+        A2 obj1=new A2();
+        B2 obj2=new B2();
 
-        obj2.setPriority(Thread.MAX_PRIORITY); // 10
-        obj1.setPriority(Thread.MIN_PRIORITY); // 1
-        obj1.start();
-        obj2.start();
+        Thread T1=new Thread(obj1);
+        T1.start();
 
-        // Setting Priority does not guarantee that thread with
+        Thread T2=new Thread(obj2);
+        T2.start();
+
+//        A2.start();
     }
 }

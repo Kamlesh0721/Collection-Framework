@@ -1,4 +1,4 @@
-package CollectionFramework.GenericMethod.IterateColllection;
+package CollectionFramework.IterateColllection;
 
 import java.util.LinkedList;
 
